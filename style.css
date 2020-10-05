@@ -1,0 +1,32 @@
+.box{
+	width:100px;
+	height:100px;
+	background-color:#196bff;	
+    transition-property:all;
+    transition-duration:1s;
+    float:left;
+    transform:scale(1,1);
+
+    animation:Squsre;
+    animation-duration:2s;
+ } 
+
+.box:hover {
+	transform:rotate(180deg);
+	transform:scale(0.5,0.5);
+ }
+
+@keyframes Squsre {
+
+	0% {
+		transform:rotate(0deg) scale(1,1) skewY(0deg);
+	}
+
+	50% {
+		transform:rotate(180deg) scale(2,2) skewY(180deg);
+	}
+
+	100% {
+		transform:rotate(360deg) scale(1,1) skewY(0deg);
+	}
+ }
